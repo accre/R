@@ -21,7 +21,7 @@ Why Parallelize?
 
 Data analysis can be computationally intensive. You don't want to wait for your results any longer than you have to.
 
-Most of us have access to multiple CPUs, if not through the ACCRE cluster then through mutlicore processors on our personal computers. By spreading a computationally intensive task across N CPUs, you can cut your computation time to approximately 1/N of what it would be otherwise. The trick is to identify which tasks can be distributed, or *parallelized*, in this way.
+Most of us have access to multiple CPUs, if not through the ACCRE cluster then through multicore processors on our personal computers. By spreading a computationally intensive task across N CPUs, you can cut your computation time to approximately 1/N of what it would be otherwise. The trick is to identify which tasks can be distributed, or *parallelized*, in this way.
 
 A task is a good candidate to parallelize if it consists of multiple parts that do not depend on each other's results. Here are a few examples from [a recent project of mine](http://doe-scores.com) (with Rob Carroll of Florida State) predicting military dispute outcomes that used parallelization extensively:
 
@@ -88,7 +88,7 @@ Now suppose we wanted to see how the strength of the relationship varies over ti
 The script `wdi-by-year.r` takes a command line argument specifying the year (0 for 1990, 1 for 1991, etc.), runs the regression for that year, and appends the output to the CSV file `wdi-array-results.csv`:
 
 ``` r
-### wdi-by-year.csv
+### wdi-by-year.r
 ###
 ### Run regression of female labor force participation on fertility and GDP per
 ### capita for year specified in command line argument
