@@ -1,4 +1,4 @@
-### wdi-by-year.csv
+### wdi-by-year.r
 ###
 ### Run regression of female labor force participation on fertility and GDP per
 ### capita for year specified in command line argument

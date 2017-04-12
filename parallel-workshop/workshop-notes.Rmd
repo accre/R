@@ -29,7 +29,7 @@ That's even before we get to the 10,000+ user-contributed packages available thr
 
 Data analysis can be computationally intensive.  You don't want to wait for your results any longer than you have to.
 
-Most of us have access to multiple CPUs, if not through the ACCRE cluster then through mutlicore processors on our personal computers.  By spreading a computationally intensive task across N CPUs, you can cut your computation time to approximately 1/N of what it would be otherwise.  The trick is to identify which tasks can be distributed, or *parallelized*, in this way.
+Most of us have access to multiple CPUs, if not through the ACCRE cluster then through multicore processors on our personal computers.  By spreading a computationally intensive task across N CPUs, you can cut your computation time to approximately 1/N of what it would be otherwise.  The trick is to identify which tasks can be distributed, or *parallelized*, in this way.
 
 A task is a good candidate to parallelize if it consists of multiple parts that do not depend on each other's results.  Here are a few examples from [a recent project of mine](http://doe-scores.com) (with Rob Carroll of Florida State) predicting military dispute outcomes that used parallelization extensively:
 
