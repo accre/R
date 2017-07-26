@@ -14,7 +14,7 @@ You're now ready to install Rmpi. If you don't already have one, create a direct
 mkdir -p ~/R/rlib-3.3.3
 ```
 
-Now instll Rmpi:
+Now install Rmpi:
 
 ```bash
 R
