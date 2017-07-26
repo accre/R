@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --mail-user=vunetid@vanderbilt.edu
+#SBATCH --mail-user=<my.email@vanderbilt.edu>
 #SBATCH --mail-type=ALL
 #SBATCH --nodes=2
 #SBATCH --tasks-per-node=4
@@ -7,7 +7,6 @@
 #SBATCH --mem=500M
 #SBATCH --output=R_job_slurm.out
 
-setpkgs -a R_3.1.1
-setpkgs -a openmpi_1.8.4
+module load GCC OpenMPI R
 
-srun --mpi=pmi2 Rscript rmpi.R
+srun Rscript rmpi.R

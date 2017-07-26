@@ -1,3 +1,4 @@
+.libPaths("~/R/rlib-3.3.3") # need this to pick up our locally installed doMPI
 library("Rmpi", quietly = TRUE)
 library("doMPI", quietly = TRUE)
 
